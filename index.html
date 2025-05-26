@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shagoto's CS 217 Final Project's GIF Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      padding: 30px;
+      background: linear-gradient(to right, #f0f8ff, #e6f2ff);
+      color: #333;
+    }
+
+    header {
+      background: #004080;
+      padding: 10px 20px;
+      color: white;
+      font-size: 1.2em;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #004080;
+      font-size: 2.5em;
+      margin: 20px 0;
+    }
+
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    h3, h4 {
+      color: #0059b3;
+      margin-top: 20px;
+    }
+
+    .folder {
+      margin-bottom: 60px;
+    }
+
+    .gif-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    .gif img {
+      max-width: 100%;
+      border: 2px solid #b3d1ff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: fadeInUp 0.6s ease-in-out;
+    }
+
+    .gif img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Shagoto's CS 217 Final Project's Gallery</header>
+
+  <h1>Shagoto's CS 217 Projects GIF Gallery</h1>
+
+  <div class="folder">
+    <h2>Calibrated</h2>
+
+    <h3>Yale Data</h3>
+    <h4>Subject 1</h4>
+    <div class="gif-grid">
+      <div class="gif"><img src="calibrated/yale/1.gif" alt="Yale Subject 1 - 1"></div>
+      <div class="gif"><img src="calibrated/yale/2.gif" alt="Yale Subject 1 - 2"></div>
+    </div>
+
+    <h4>Subject 2</h4>
+    <div class="gif-grid">
+      <div class="gif"><img src="calibrated/yale/3.gif" alt="Yale Subject 2 - 1"></div>
+      <div class="gif"><img src="calibrated/yale/4.gif" alt="Yale Subject 2 - 2"></div>
+    </div>
+
+    <h3>DiLiGenT</h3>
+    <h4>Pot1</h4>
+    <div class="gif-grid">
+      <div class="gif"><img src="calibrated/diligent/pot/1.gif" alt="Pot1 Calibrated - 1"></div>
+      <div class="gif"><img src="calibrated/diligent/pot/2.gif" alt="Pot1 Calibrated - 2"></div>
+    </div>
+
+    <h4>Buddha</h4>
+    <div class="gif-grid">
+      <div class="gif"><img src="calibrated/diligent/buddha/1.gif" alt="Buddha Calibrated - 1"></div>
+      <div class="gif"><img src="calibrated/diligent/buddha/2.gif" alt="Buddha Calibrated - 2"></div>
+    </div>
+  </div>
+
+  <div class="folder">
+    <h2>Uncalibrated</h2>
+
+    <h3>Mode 1 - SVD</h3>
+    <h4>Pot1</h4>
+    <div class="gif-grid">
+      <div class="gif"><img src="uncalibrated/svd/pot/1.gif" alt="Pot1 SVD - 1"></div>
+      <div class="gif"><img src="uncalibrated/svd/pot/2.gif" alt="Pot1 SVD - 2"></div>
+    </div>
+
+    <h4>Buddha</h4>
+    <div class="gif-grid">
+      <div class="gif"><img src="uncalibrated/svd/buddha/1.gif" alt="Buddha SVD - 1"></div>
+      <div class="gif"><img src="uncalibrated/svd/buddha/2.gif" alt="Buddha SVD - 2"></div>
+    </div>
+
+    <h3>Mode 2 - Simple Deep Learning</h3>
+    <h4>Pot1</h4>
+    <div class="gif-grid">
+      <div class="gif"><img src="uncalibrated/sdl/pot/1.gif" alt="Pot1 SDL - 1"></div>
+      <div class="gif"><img src="uncalibrated/sdl/pot/2.gif" alt="Pot1 SDL - 2"></div>
+    </div>
+
+    <h4>Buddha</h4>
+    <div class="gif-grid">
+      <div class="gif"><img src="uncalibrated/sdl/buddha/1.gif" alt="Buddha SDL - 1"></div>
+      <div class="gif"><img src="uncalibrated/sdl/buddha/2.gif" alt="Buddha SDL - 2"></div>
+    </div>
+
+    <h3>Mode 3 - SDPS</h3>
+    <h4>Pot1</h4>
+    <div class="gif-grid">
+      <div class="gif"><img src="uncalibrated/sdps/pot/1.gif" alt="Pot1 SDPS - 1"></div>
+      <div class="gif"><img src="uncalibrated/sdps/pot/2.gif" alt="Pot1 SDPS - 2"></div>
+    </div>
+
+    <h4>Buddha</h4>
+    <div class="gif-grid">
+      <div class="gif"><img src="uncalibrated/sdps/buddha/1.gif" alt="Buddha SDPS - 1"></div>
+      <div class="gif"><img src="uncalibrated/sdps/buddha/2.gif" alt="Buddha SDPS - 2"></div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Shagoto — CS 217 Final Project | Contact: shagotor@uci.edu
+  </footer>
+
+</body>
+</html>
